@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pipeiback">
+
+    <include layout="@layout/toobar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="您的年龄"
+        android:textColor="@color/color_43496A"
+        android:textSize="14sp" />
+    <GridView
+        android:id="@+id/gv_age"
+        android:numColumns="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="您的职业"
+        android:textColor="@color/color_43496A"
+        android:textSize="14sp" />
+    <GridView
+        android:id="@+id/gv_zhiye"
+        android:numColumns="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="今日心情"
+        android:textColor="@color/color_43496A"
+        android:textSize="14sp" />
+    <GridView
+        android:id="@+id/gv_xinqing"
+        android:numColumns="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="聊天方面"
+        android:textColor="@color/color_43496A"
+        android:textSize="14sp" />
+    <GridView
+        android:id="@+id/gv_chat"
+        android:numColumns="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:gravity="center"
+        android:background="@drawable/btn_bg_wellcome"
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"
+        android:padding="12dp"
+        android:text="开始匹配"/>
+    </LinearLayout>

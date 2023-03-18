@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xinqing">
+        <item>开心</item>
+        <item>难受</item>
+        <item>快乐</item>
+        <item>沮丧</item>
+        <item>颓废</item>
+    </string-array>
+</resources>

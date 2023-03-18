@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include layout="@layout/toobar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下列问题中，每题有4个备选答案，请根据你的实际情况选择一个最适合你的答案：\n
+        A表示最近一周内出现这种情况的日子不超过一天\n
+        B表示最近一周内曾有1~2天出现这种情况\n
+        C表示最近一周内曾有3~4天出现这种情况\n
+        D表示最近一周内曾有5~7天出现过这种情况\n
+        计分方式：每题A记0分，B记1分，C记2分，D记3分\n0
+        最后各题得分相加，统计总分。"/>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="1、 我因一些事而烦恼" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test01"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans0101"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:id="@+id/ans0102"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0103"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0104"/>
+
+        </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="2、 胃口不好，不大想吃东西" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test02"
+        android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/ans0201"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:checked="true"
+        android:onClick="onRadioClicked"
+        android:text="A" />
+    <RadioButton
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="B"
+        android:onClick="onRadioClicked"
+        android:checked="true"
+        android:id="@+id/ans0202"/>
+    <RadioButton
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="C"
+        android:onClick="onRadioClicked"
+        android:checked="true"
+        android:id="@+id/ans0203"/>
+    <RadioButton
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:text="D"
+        android:onClick="onRadioClicked"
+        android:checked="true"
+        android:id="@+id/ans0204"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="3、 心里觉得苦闷，难以消除" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test03"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans0301"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0302"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0303"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0304"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="4、 总觉得自己不如别人" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test04"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans0401"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0402"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0403"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0404"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="5、 做事时无法集中精力" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test05"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans0501"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0502"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0503"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0504"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="6、 自觉情绪低沉" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test06"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans0601"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0602"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0603"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0604"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="7、 做任何事情都觉得费力" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test07"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans0701"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0702"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0703"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0704"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="8、 觉得前途没有希望" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test08"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans0801"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0802"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0803"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0804"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="9、 觉得自己的生活是失败的" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test09"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans0901"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0902"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0903"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans0904"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="10、感到害怕" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1001"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1002"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1003"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1004"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="11、睡眠不好" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test11"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1101"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1102"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1103"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1104"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="12、高兴不起来" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test12"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1201"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1202"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1203"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1204"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="13、说话比往常少了" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test13"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1301"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1302"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1303"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1304"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="14、感到孤单" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test14"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1401"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1402"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1403"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1404"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="15、人们对我不太友好" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test15"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1501"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1502"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1503"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1504"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="16、觉得生活没有意思" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test16"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1601"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1602"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1603"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1604"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="17、曾哭泣过。" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test17"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1701"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1702"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1703"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1704"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="18、感到忧愁" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test18"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1801"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1802"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1803"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1804"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="19、觉得人们不喜欢我" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test19"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans1901"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1902"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1903"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans1904"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorPrimary"
+        android:text="20、无法继续日常工作" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test20"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ans2001"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:checked="true"
+            android:onClick="onRadioClicked"
+            android:text="A" />
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="B"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans2002"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="C"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans2003"/>
+        <RadioButton
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="D"
+            android:onClick="onRadioClicked"
+            android:checked="true"
+            android:id="@+id/ans2004"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:onClick="fineshedtest"
+        android:id="@+id/textdone"/>
+    </LinearLayout>
+
+</ScrollView>
